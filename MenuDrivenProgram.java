@@ -19,11 +19,9 @@ public class MenuDrivenProgram
 
     public static void checkEvenOrOdd()
     {
-        Scanner input = new Scanner(System.in);
-        int number;
-
+        Scanner userInputScanner = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        number = input.nextInt();
+        int number = userInputScanner.nextInt();
 
         if(number % 2 == 0)
         {
@@ -33,8 +31,6 @@ public class MenuDrivenProgram
         {
             System.out.println(number + " is an Odd number.");
         }
-
-        input.close();
     }
 
     public static boolean handelMenuChoice(int choice)
@@ -57,7 +53,7 @@ public class MenuDrivenProgram
     }
 
     public static void main(String[] args) 
-    {
+    {   
         Scanner input = new Scanner(System.in);
         int choice;
         boolean continueLoop = true;
